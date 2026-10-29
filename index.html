@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b10" />
+  <title>AFTERLIGHT — Ghost in the Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✳</span> AFTERLIGHT<span class="brand-dot">.</span></a>
+    <nav><a href="#how">How it works</a><a href="#story">The archive</a></nav>
+    <div class="status"><span class="pulse"></span> LOCAL STORY ENGINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span>✦</span> OPEN-SOURCE AI / WEEKLY BUILD</div>
+      <h1>Some stories<br>never <em>leave.</em></h1>
+      <p class="hero-copy">A quiet corner of the machine for the voices, memories, and mysteries that refuse to fade.</p>
+      <div class="hero-note"><span class="tiny-star">✳</span> Made for the ones we remember — and the things we can't explain.</div>
+    </section>
+
+    <section class="studio" id="story">
+      <div class="studio-head">
+        <div><span class="section-kicker">01 / THE STORY ROOM</span><h2>Call something <em>from the dark.</em></h2></div>
+        <div class="engine-pill"><span class="pulse"></span> OPEN MODEL READY</div>
+      </div>
+      <div class="workspace">
+        <aside class="controls">
+          <label for="prompt">WHAT SHOULD THE MACHINE REMEMBER?</label>
+          <textarea id="prompt" placeholder="A forgotten radio in an empty house...">A forgotten radio in an empty house</textarea>
+          <div class="field-row">
+            <div class="field"><label for="mood">ATMOSPHERE</label>
+              <select id="mood"><option value="haunting">Haunting & quiet</option><option value="folklore">Folklore & wonder</option><option value="cosmic">Cosmic dread</option><option value="melancholy">Beautifully melancholy</option></select>
+            </div>
+            <div class="field"><label for="length">LENGTH</label>
+              <select id="length"><option value="short">Short signal</option><option value="medium">A longer echo</option></select>
+            </div>
+          </div>
+          <button id="summon" class="summon-btn"><span>✧</span> GENERATE A STORY <span class="arrow">↗</span></button>
+          <p class="privacy"><span>⌁</span> Your prompt stays in this browser demo. No account. No tracking.</p>
+        </aside>
+        <div class="story-panel">
+          <div class="story-top"><span class="signal"><i></i><i></i><i></i> SIGNAL FOUND</span><span class="story-id" id="storyId">ARCHIVE / 0001</span></div>
+          <div id="storyOutput" class="story-output">
+            <div class="empty-symbol">✳</div>
+            <p class="placeholder-title">The archive is listening.</p>
+            <p class="placeholder-copy">Give it a memory, a place, or a strange little detail. See what comes back.</p>
+          </div>
+          <div class="story-footer"><span>AFTERLIGHT ARCHIVE</span><span id="wordCount">0 WORDS</span><button id="copyStory" disabled>↗ COPY TEXT</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="how">
+      <div class="manifesto-label">02 / WHY OPEN?</div>
+      <div class="manifesto-content"><h2>Memory shouldn't<br>need <em>permission.</em></h2>
+        <p>Afterlight is imagined as a private story engine: open-weight models can run on your own machine, letting personal memories stay personal. The model can be swapped, adapted, and kept alive by a community—not a single platform.</p>
+        <div class="principles">
+          <div><span>01</span><strong>PRIVATE BY DESIGN</strong><small>Stories can stay on your device.</small></div>
+          <div><span>02</span><strong>BUILT TO BE SWAPPED</strong><small>Choose the model that fits.</small></div>
+          <div><span>03</span><strong>HERE TO STAY</strong><small>Open tools outlive closed doors.</small></div>
+        </div>
+      </div>
+    </section>
+    <footer><span>✳ AFTERLIGHT</span><span>AN OPEN-SOURCE AI CONCEPT / 2026</span><span>KEEP THE STORIES.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
